@@ -1,2 +1,2 @@
 # CISC361-Class-Exercises
-for 361
+for cisc361 class assignments
