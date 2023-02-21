@@ -6,8 +6,8 @@
 int main() {
     int status;
     int pid = fork();
-    printf("I am the grandchild (%d)", pid);
-    printf("I am the child (%d)", pid);
-    printf("I am the parent (%d)", pid);
+    printf("I am the grandchild (%d)/n", pid);
+    printf("I am the child (%d)/n", pid);
+    printf("I am the parent (%d)/n", pid);
     return 0;
 }
