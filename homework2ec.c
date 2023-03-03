@@ -1,7 +1,8 @@
 #include <pthread.h>
 #include <stdio.h>
-#include <sys/types.h>
-int value = 0; 
+#include <unistd.h>
+#include <sys/wait.h>
+int value = 0;
 void *runner(void *param);
 int main (int argc, char *argv[]){
 pid_t pid;

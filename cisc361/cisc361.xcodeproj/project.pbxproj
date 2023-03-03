@@ -15,6 +15,7 @@
 		98B8A62D29B1928D00984BA4 /* cisc361Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B8A62C29B1928D00984BA4 /* cisc361Tests.swift */; };
 		98B8A63729B1928D00984BA4 /* cisc361UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B8A63629B1928D00984BA4 /* cisc361UITests.swift */; };
 		98B8A63929B1928D00984BA4 /* cisc361UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B8A63829B1928D00984BA4 /* cisc361UITestsLaunchTests.swift */; };
+		98B8A64829B192E900984BA4 /* a.c in Sources */ = {isa = PBXBuildFile; fileRef = 98B8A64729B192E900984BA4 /* a.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,9 @@
 		98B8A63229B1928D00984BA4 /* cisc361UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cisc361UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		98B8A63629B1928D00984BA4 /* cisc361UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cisc361UITests.swift; sourceTree = "<group>"; };
 		98B8A63829B1928D00984BA4 /* cisc361UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cisc361UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		98B8A64529B192E900984BA4 /* cisc361-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "cisc361-Bridging-Header.h"; sourceTree = "<group>"; };
+		98B8A64629B192E900984BA4 /* a.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = a.h; sourceTree = "<group>"; };
+		98B8A64729B192E900984BA4 /* a.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = a.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,9 @@
 				98B8A61F29B1928D00984BA4 /* Info.plist */,
 				98B8A62029B1928D00984BA4 /* cisc361.entitlements */,
 				98B8A62129B1928D00984BA4 /* Preview Content */,
+				98B8A64629B192E900984BA4 /* a.h */,
+				98B8A64729B192E900984BA4 /* a.c */,
+				98B8A64529B192E900984BA4 /* cisc361-Bridging-Header.h */,
 			);
 			path = cisc361;
 			sourceTree = "<group>";
@@ -202,6 +209,7 @@
 				TargetAttributes = {
 					98B8A61329B1928B00984BA4 = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 					};
 					98B8A62729B1928D00984BA4 = {
 						CreatedOnToolsVersion = 14.2;
@@ -265,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				98B8A61829B1928B00984BA4 /* cisc361App.swift in Sources */,
+				98B8A64829B192E900984BA4 /* a.c in Sources */,
 				98B8A61A29B1928B00984BA4 /* cisc361Document.swift in Sources */,
 				98B8A61C29B1928B00984BA4 /* ContentView.swift in Sources */,
 			);
@@ -417,6 +426,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = cisc361/cisc361.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -446,6 +456,8 @@
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "cisc361/cisc361-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -456,6 +468,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = cisc361/cisc361.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -485,6 +498,7 @@
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "cisc361/cisc361-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
