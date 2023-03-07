@@ -16,7 +16,6 @@ temp[10];
         burst_time[i] = 0;
         temp[i] = 0;
     }
-     
     // Define Number of Processes
     while(num_processes < 1 || num_processes > 10)
     {
@@ -44,7 +43,6 @@ temp[10];
             i--;
         }
     }
- 
     // Define Quantum
     if (round_robin_algorithm)
     {
@@ -60,7 +58,6 @@ temp[10];
     }
     // Prepare Output
     printf("\nProcess ID\t\tArrival Time\t\tBurst Time\t Turnaround Time\tWaiting Time\n");
- 
     // Perform Scheduling Calculations
     if (!round_robin_algorithm)
     {
@@ -76,3 +73,4 @@ temp[10];
     printf("\n\nAverage Waiting Time:\t%f", average_wait_time);
     printf("\nAvg Turnaround Time:\t%f\n", average_turnaround_time);
     return 0;
+}
