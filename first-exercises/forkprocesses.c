@@ -6,8 +6,26 @@
 int main() {
     int status;
     int pid = fork();
-    printf("I am the grandchild (%d)", pid);
-    printf("I am the child (%d)", pid);
-    printf("I am the parent (%d)", pid);
+    if (pid < 0) {
+        printf("Fork failed");
+        exit(1);
+    }
+    else if (pid == 0) {
+        int gpid = fork();
+    if (gpid < 0) {
+        printf("Fork failed");
+        exit(1);
+    } else if (gpid == 0) {
+        printf("I am the grandchild (%d)\n", getpid());
+    }
+    else {
+        wait(NULL);
+        printf("I am the child (%d)\n", getpid());
+    }
+    }
+    else {
+        wait(NULL);
+        printf("I am the parent (%d)\n", getpid());
+    }
     return 0;
 }
